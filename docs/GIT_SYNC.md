@@ -2,20 +2,21 @@
 
 本地仓库目录：`ml-data-playbook/`。远端使用账号 `yinshuo-thu` 下同名独立仓库。
 
-## 首次创建远端（若尚未创建）
+## 获取公开仓库
 
-在 [GitHub 新建页面](https://github.com/new) 创建 `ml-data-playbook`，建议 Private。
-已有本地提交时，不额外勾选初始化 README / License / .gitignore，避免出现两段独立历史。
-然后在仓库根目录：
+本仓库公开用于学习与分享，任何人都可以克隆：
 
 ```bash
-git remote -v
-git push -u origin main
+git clone https://github.com/yinshuo-thu/ml-data-playbook.git
+cd ml-data-playbook
 ```
 
-本地 origin 使用 `ssh://git@ssh.github.com:443/yinshuo-thu/ml-data-playbook.git`。
+维护者的本地 origin 使用 `ssh://git@ssh.github.com:443/yinshuo-thu/ml-data-playbook.git`。
 这是 GitHub 官方支持的 SSH 443 入口。SSH 用于认证 Git 推送；创建远端仓库仍需网页或 GitHub API。
 如果遇到服务器指纹提示，应与 [GitHub 公布的指纹](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints) 核对。
+
+普通读者无需 SSH 密钥即可通过 HTTPS 克隆。提交改进时可先 Fork，再从自己的分支发起 Pull Request；
+只有具有写权限的维护者能直接推送到本仓库。
 
 ## 日常更新
 

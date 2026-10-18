@@ -14,6 +14,11 @@
 
 ## 三分钟跑通
 
+```bash
+git clone https://github.com/yinshuo-thu/ml-data-playbook.git
+cd ml-data-playbook
+```
+
 在仓库根目录执行，Python 3.10+。以下使用已安装的 uv 创建 Python 3.13 环境；无需 uv 的安装方式见[环境说明](docs/SETUP.md)。基础示例无需网络数据。
 
 ```bash
