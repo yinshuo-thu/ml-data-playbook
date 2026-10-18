@@ -1,0 +1,166 @@
+{
+  "date": "2026-10-18",
+  "platform": "macOS arm64",
+  "python": "3.13.12",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "torch": "2.7.1",
+    "pyarrow": "26.0.0",
+    "openpyxl": "3.1.5"
+  },
+  "core": [
+    {
+      "module": "numpy_basics.arrays",
+      "returncode": 0,
+      "seconds": 0.1
+    },
+    {
+      "module": "data_analysis.cleaning",
+      "returncode": 0,
+      "seconds": 1.58
+    },
+    {
+      "module": "data_analysis.groupby_reshape",
+      "returncode": 0,
+      "seconds": 2.52
+    },
+    {
+      "module": "data_analysis.joins",
+      "returncode": 0,
+      "seconds": 0.72
+    },
+    {
+      "module": "data_analysis.io_memory",
+      "returncode": 0,
+      "seconds": 3.32
+    },
+    {
+      "module": "data_analysis.dates_strings",
+      "returncode": 0,
+      "seconds": 0.61
+    },
+    {
+      "module": "visualization.eda_report",
+      "returncode": 0,
+      "seconds": 2.78
+    },
+    {
+      "module": "statistical_analysis.bootstrap_ab",
+      "returncode": 0,
+      "seconds": 0.8
+    },
+    {
+      "module": "sql.sqlite_analysis",
+      "returncode": 0,
+      "seconds": 0.36
+    },
+    {
+      "module": "machine_learning.regression",
+      "returncode": 0,
+      "seconds": 1.47
+    },
+    {
+      "module": "machine_learning.classification",
+      "returncode": 0,
+      "seconds": 1.49
+    },
+    {
+      "module": "machine_learning.tuning",
+      "returncode": 0,
+      "seconds": 1.62
+    },
+    {
+      "module": "machine_learning.feature_engineering",
+      "returncode": 0,
+      "seconds": 4.43
+    },
+    {
+      "module": "machine_learning.feature_importance",
+      "returncode": 0,
+      "seconds": 2.25
+    },
+    {
+      "module": "machine_learning.text_classification",
+      "returncode": 0,
+      "seconds": 1.4
+    },
+    {
+      "module": "machine_learning.clustering_pca",
+      "returncode": 0,
+      "seconds": 1.67
+    },
+    {
+      "module": "machine_learning.validation",
+      "returncode": 0,
+      "seconds": 1.28
+    },
+    {
+      "module": "time_series.forecasting",
+      "returncode": 0,
+      "seconds": 2.53
+    },
+    {
+      "module": "scripts.make_demo_data",
+      "returncode": 0,
+      "seconds": 1.31
+    },
+    {
+      "module": "data_analysis.profile_csv",
+      "returncode": 0,
+      "seconds": 0.38
+    }
+  ],
+  "deep": [
+    {
+      "module": "deep_learning.tensors",
+      "returncode": 0,
+      "seconds": 11.58
+    },
+    {
+      "module": "deep_learning.mlp",
+      "returncode": 0,
+      "seconds": 6.36
+    },
+    {
+      "module": "deep_learning.cnn",
+      "returncode": 0,
+      "seconds": 4.69
+    },
+    {
+      "module": "deep_learning.sequence",
+      "returncode": 0,
+      "seconds": 1.66
+    }
+  ],
+  "integrity_tests": 11,
+  "house_prices": {
+    "train_shape": [
+      1460,
+      81
+    ],
+    "test_shape": [
+      1459,
+      80
+    ],
+    "development_rows": 1168,
+    "holdout_rows": 292,
+    "selected_by_development_cv": "random_forest",
+    "holdout_log_rmse": 0.14679903054161755,
+    "note": "Local validation only. No Kaggle submission made."
+  },
+  "mlp": {
+    "test_accuracy": 0.9611111283302307,
+    "best_val_loss": 0.14391674101352692,
+    "epochs_ran": 20,
+    "train_rows": 1149,
+    "validation_rows": 288,
+    "test_rows": 360,
+    "device": "cpu",
+    "torch": "2.7.1"
+  }
+}
